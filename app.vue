@@ -3,6 +3,8 @@
     <div class="app-container">
       <NavBar />
       <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
     </div>
   </div>
 </template>
