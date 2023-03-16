@@ -1,39 +1,11 @@
 <script>
 export default {
   name: "NavBar",
-  data() {
-    return {
-      showNavbar: true,
-      lastScrollPosition: 0,
-    };
-  },
-  mounted() {
-    window.addEventListener("scroll", this.onScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.onScroll);
-  },
-  methods: {
-    onScroll() {
-      const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollPosition < 0) {
-        return;
-      }
-      // Stop executing this function if the difference between
-      // current scroll position and last scroll position is less than some offset
-      if (Math.abs(currentScrollPosition + this.lastScrollPosition) < 60) {
-        return;
-      }
-      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
-      this.lastScrollPosition = currentScrollPosition;
-    },
-  },
 };
 </script>
 
 <template>
-  <nav class="nav-wrapper" :class="{ 'navbar-hidden': !showNavbar }">
+  <nav class="nav-wrapper">
     <h5 class="nav-logo"><nuxt-link to="/">subrat</nuxt-link></h5>
     <ul class="nav-mid-lists">
       <li><a href="#home">Home</a></li>
@@ -76,10 +48,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.navbar-hidden {
-  background: linear-gradient(to right, #ffffff, #ece9e6);
-}
 .nav-wrapper {
+  background: linear-gradient(to right, #ffffff, #ece9e6);
   position: fixed;
   width: 100vw;
   padding: 0.5rem 10%;
