@@ -5,12 +5,12 @@ export default {
 </script>
 
 <template>
-  <div class="hero-container">
+  <div class="hero-container" id="home">
     <div class="hero-wrapper">
       <div class="profile"></div>
       <span class="intro">Hi, I'm Subrat</span>
       <h1 class="title">
-        Turn <span class="title-design">Design</span> into
+        Turn your <span class="title-design">Design</span> into
         <span class="title-code">Code</span>
       </h1>
       <h3 class="desc">Front-end developer from india 🇮🇳.</h3>
@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .hero-container {
   padding: 0 10%;
-  height: 95vh;
+  height: 100vh;
 
   .hero-wrapper {
     height: 100%;
@@ -37,6 +37,14 @@ export default {
     justify-content: center;
     font-family: "Manrope", sans-serif;
 
+    .profile {
+      height: 150px;
+      width: 150px;
+      background: #29323c;
+      border-radius: 50px;
+      margin: 1rem 0;
+    }
+
     .intro {
       font-weight: 600;
       font-size: 1.3rem;
@@ -45,6 +53,7 @@ export default {
     .title {
       margin: 0.5rem;
       line-height: 3rem;
+      font-weight: 600;
 
       .title-design {
         color: #29323c;
@@ -62,6 +71,7 @@ export default {
     }
 
     .desc {
+      font-weight: 600;
       width: 60%;
       text-align: center;
       line-height: 1.8rem;
@@ -70,7 +80,7 @@ export default {
     }
 
     .connect-btn {
-      margin-top: 1rem;
+      margin-top: 0.8rem;
       outline: none;
       background: #ece9e6; /* fallback for old browsers */
       background: -webkit-linear-gradient(
