@@ -1,0 +1,38 @@
+.headerWrapper {
+  color: #fff;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0.5rem 0.3rem;
+
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.144);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listItem {
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.listItem a {
+  transition: all 300ms ease-in-out;
+}
+
+.listItem a:hover {
+  color: #85ffbd;
+}
