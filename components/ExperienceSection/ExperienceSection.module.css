@@ -1,0 +1,148 @@
+.Wrapper {
+  height: 100%;
+  background-color: #000;
+  position: relative;
+  padding: 0 12rem;
+}
+
+.experienceTitle {
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  background: -webkit-linear-gradient(#eee, #818181);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experienceCardContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.justifyRight {
+  flex-direction: row-reverse;
+}
+
+.experienceCard {
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  font-family: "Inter", sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.226);
+  margin: 2rem 0.5rem;
+  color: #eee;
+  width: 50%;
+  max-width: 600px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  position: relative;
+  background: #000;
+  transition: scale 300ms ease-in-out;
+}
+
+.experienceCard::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -7px;
+  width: calc(100% + 10px);
+  height: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.226);
+  border-left: 2px solid rgba(255, 255, 255, 0.226);
+  border-radius: 5px;
+}
+
+.experienceCard:hover {
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  background-color: rgba(77, 77, 77, 0.295);
+  scale: 1.01;
+}
+
+.experienceCard:hover .companyTitle {
+  color: #2ec4b6;
+}
+
+.companyTitle {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #ced4da;
+}
+
+.workingDesignation {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #fcbf49;
+  margin: 0.3rem 0;
+}
+
+.workingDate {
+  margin: 0.2rem 0;
+}
+
+.workTimeline {
+  margin: 1.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.workTimeline > span {
+  font-family: "Inter", sans-serif;
+  background-color: #ced4da;
+  color: #000;
+  padding: 0.25rem 0.4rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0 0.5rem 0 0;
+}
+
+.workTimeline > a {
+  z-index: 1;
+}
+
+.workTimeline > a > svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.workingListContainer {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+
+.workingListContainer > li {
+  font-family: "Inter", sans-serif;
+  list-style: disc;
+  color: #adb5bd;
+  margin: 0.5rem 0;
+  line-height: 1.2rem;
+}
+
+@media all and (max-width: 1000px) {
+  .Wrapper {
+    padding: 0 2rem;
+  }
+
+  .experienceCardContainer {
+    margin-top: 0;
+  }
+
+  .experienceTitle {
+    font-size: 2.2rem;
+  }
+
+  .experienceCard {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .experienceTitle {
+    font-size: 3rem;
+  }
+}

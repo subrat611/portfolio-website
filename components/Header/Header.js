@@ -21,7 +21,7 @@ const Header = () => {
       <ul className={styles.listContainer}>
         {navItem.map((item, i) => (
           <li className={styles.listItem} key={i}>
-            <a href="">{item.name}</a>
+            <a href="#">{item.name}</a>
           </li>
         ))}
       </ul>
