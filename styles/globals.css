@@ -7,4 +7,7 @@
   body {
     font-family: "Inter", sans-serif;
   }
+  .dark svg path {
+    color: rgb(209, 213, 219, 1);
+  }
 }

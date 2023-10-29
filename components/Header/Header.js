@@ -24,7 +24,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      <span className="text-slate-300 cursor-pointer">
+      {/* <span className="text-slate-300 cursor-pointer">
         {themeMode === "light" ? (
           <button onClick={() => setThemeMode("dark")}>
             <DarkThemeIcon />
@@ -34,7 +34,7 @@ const Header = () => {
             <LightThemeIcon />
           </button>
         )}
-      </span>
+      </span> */}
     </header>
   );
 };

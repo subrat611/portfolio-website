@@ -1,15 +1,73 @@
-import styles from "./HeroSection.module.css";
+import { useContext } from "react";
+import Image from "next/image";
+
+import { DocIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "@/utils/icons";
+
+import { ThemeContext } from "@/context/ThemeModeContext";
 
 const HeroSection = () => {
+  const { themeMode } = useContext(ThemeContext);
+
   return (
-    <section className={styles.Wrapper}>
-      <div className={styles.magicpattern}></div>
-      <div className={styles.heroContainer}>
-        <p className={styles.heroTitle}>
-          Subrat Jena
-          <span className={styles.professionText}>A Software Developer</span>
-        </p>
+    <section className="w-11/12 max-w-[780px] mx-auto mt-16">
+      <h1 className="text-3xl text-slate-50 font-bold">Subrat Jena</h1>
+      <p className="text-lg text-gray-300 w-10/12">
+        Fullstack JavaScript Developer from 🇮🇳
+      </p>
+      <div className="flex flex-col sm:flex-row mt-8">
+        <img
+          src="/profile-pic.jpeg"
+          alt="profile-image"
+          className="rounded-full w-[140px] h-[140px] sm:w-[150px] sm:h-[150px]"
+        />
+        <div className="ml-4">
+          <div className="my-3">
+            <a
+              className={`cursor-pointer flex items-center ${themeMode} group`}
+            >
+              <GithubIcon />
+              <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
+                GitHub Profile
+              </span>
+            </a>
+          </div>
+          <div className="my-3">
+            <a
+              className={`cursor-pointer flex items-center ${themeMode} group`}
+            >
+              <LinkedinIcon />
+              <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
+                Linkedin Profile
+              </span>
+            </a>
+          </div>
+          <div className="my-3">
+            <a
+              className={`cursor-pointer flex items-center ${themeMode} group`}
+              href="https://twitter.com/nikhil88950"
+              target="_blank"
+            >
+              <TwitterIcon />
+              <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
+                Twitter Profile
+              </span>
+            </a>
+          </div>
+          <div className="my-3">
+            <a
+              className={`cursor-pointer flex items-center ${themeMode} group`}
+              href="https://twitter.com/nikhil88950"
+              target="_blank"
+            >
+              <DocIcon />
+              <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
+                Resume
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
+      <p className="mt-6 text-slate-200">Hi, I am Subrat Kumar Jena.</p>
     </section>
   );
 };
