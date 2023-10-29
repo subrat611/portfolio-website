@@ -24,6 +24,8 @@ const HeroSection = () => {
           <div className="my-3">
             <a
               className={`cursor-pointer flex items-center ${themeMode} group`}
+              href="https://github.com/subrat611"
+              target="_blank"
             >
               <GithubIcon />
               <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
@@ -34,6 +36,8 @@ const HeroSection = () => {
           <div className="my-3">
             <a
               className={`cursor-pointer flex items-center ${themeMode} group`}
+              href="https://www.linkedin.com/in/subratkumarjena/"
+              target="_blank"
             >
               <LinkedinIcon />
               <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
@@ -56,8 +60,6 @@ const HeroSection = () => {
           <div className="my-3">
             <a
               className={`cursor-pointer flex items-center ${themeMode} group`}
-              href="https://twitter.com/nikhil88950"
-              target="_blank"
             >
               <DocIcon />
               <span className="text-gray-400 ml-2 font-medium group-hover:text-gray-300">
