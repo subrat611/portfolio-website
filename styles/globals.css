@@ -1,50 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,700;6..12,800;6..12,1000&family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  scroll-behavior: smooth;
-}
-
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-container {
-  position: relative;
-}
-
-body::-webkit-scrollbar {
-  width: 5px; /* Adjust the width as per your preference */
-  background: #000;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #ecececda; /* Change the color as per your preference */
-  border-radius: 10px;
-}
-body::-moz-scrollbar-thumb {
-  background-color: #ecececda; /* Change the color as per your preference */
-  border-radius: 10px;
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
 }
