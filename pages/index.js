@@ -1,10 +1,7 @@
 import Head from "next/head";
 
 // components
-import HeroSection from "@/components/HeroSection/HeroSection";
-import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
 import Header from "@/components/Header/Header";
-import SkillsSection from "@/components/SkillsSection/SkillsSection";
 
 export default function Home() {
   return (
