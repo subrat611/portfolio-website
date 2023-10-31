@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useContext } from "react";
 
 import { ThemeContext } from "@/context/ThemeModeContext";
@@ -10,9 +11,9 @@ const Header = () => {
 
   return (
     <header className="w-11/12 max-w-[780px] mx-auto py-6 flex justify-between items-center">
-      <span className="text-slate-300 cursor-pointer">
+      <Link className="text-slate-300 cursor-pointer" href="/">
         <Logo />
-      </span>
+      </Link>
 
       <ul className="flex items-center">
         {navItem.map((item, i) => (
@@ -20,7 +21,7 @@ const Header = () => {
             key={i}
             className="text-slate-300 mx-2 font-medium hover:text-cyan-300"
           >
-            <a href="#">{item.name}</a>
+            <Link href={item.route}>{item.name}</Link>
           </li>
         ))}
       </ul>
