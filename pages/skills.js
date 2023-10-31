@@ -3,7 +3,7 @@ import { backendTools, frontendTools, managementTools } from "@/utils";
 
 const skills = () => {
   return (
-    <section className="bg-slate-950 h-screen max-h-full">
+    <section className="bg-slate-950">
       <Header />
       <div className="w-11/12 max-w-[780px] mx-auto mt-16">
         <p className="text-slate-50 font-semibold text-2xl">Frontend Tools</p>
