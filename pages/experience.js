@@ -34,7 +34,7 @@ const Experience = () => {
                     @{name}
                   </a>
                 </p>
-                <ul className="list-disc ml-3">
+                <ul className="list-disc ml-4">
                   {desc.map((item, i) => (
                     <li
                       className="text-slate-400 font-medium group-hover:text-slate-300 my-2"
