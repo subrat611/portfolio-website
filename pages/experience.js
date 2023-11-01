@@ -24,11 +24,15 @@ const Experience = () => {
                 className="rounded-full"
               />
               <div className="md:ml-3 mt-2">
-                <p className="text-slate-300 font-medium group-hover:text-slate-200">
-                  {name}
-                </p>
-                <p className="text-cyan-400 font-medium group-hover:text-cyan-300">
-                  {position}
+                <p className="text-slate-300 font-medium group-hover:text-slate-200 text-lg">
+                  {position}{" "}
+                  <a
+                    href="https://marktine.com/"
+                    target="_blank"
+                    className="text-cyan-400 font-medium group-hover:text-cyan-300 hover:underline hover:underline-offset-4"
+                  >
+                    @{name}
+                  </a>
                 </p>
                 <ul className="list-disc ml-3">
                   {desc.map((item, i) => (
