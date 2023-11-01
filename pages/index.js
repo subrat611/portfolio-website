@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Home | Subrat Jena</title>
       </Head>
-      <main className="bg-slate-950 h-screen max-h-full">
+      <main className="bg-slate-950 h-full min-h-screen">
         <Header />
         <HeroSection />
       </main>
