@@ -18,9 +18,9 @@ const HeroSection = () => {
         <img
           src="/profile-pic.jpeg"
           alt="profile-image"
-          className="rounded-full w-[140px] h-[140px] sm:w-[150px] sm:h-[150px]"
+          className="rounded-full w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]"
         />
-        <div className="ml-4">
+        <div className="ml-1 mt-2">
           <div className="my-3">
             <a
               className={`cursor-pointer flex items-center ${themeMode} group`}
@@ -69,7 +69,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <p className="mt-6 text-slate-200">Hi, I am Subrat Kumar Jena.</p>
+      {/* <p className="mt-6 text-slate-200">Hi, I am Subrat Kumar Jena.</p> */}
     </section>
   );
 };
