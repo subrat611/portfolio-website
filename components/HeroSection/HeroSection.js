@@ -20,7 +20,7 @@ const HeroSection = () => {
           alt="profile-image"
           className="rounded-full w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]"
         />
-        <div className="ml-1 mt-2">
+        <div className="ml-1 mt-2 sm:ml-5">
           <div className="my-3">
             <a
               className={`cursor-pointer flex items-center ${themeMode} group`}
