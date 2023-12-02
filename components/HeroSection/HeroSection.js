@@ -9,17 +9,12 @@ const HeroSection = () => {
   const { themeMode } = useContext(ThemeContext);
 
   return (
-    <section className="w-11/12 max-w-[780px] mx-auto mt-16">
-      <h1 className="text-3xl text-slate-50 font-bold">Subrat Jena</h1>
-      <p className="text-lg text-gray-300 w-10/12">
+    <section className="w-11/12 max-w-[780px] mx-auto mt-24 px-4 md:px-0">
+      <h1 className="text-4xl text-slate-50 font-bold w-[220px]">Subrat Kumar Jena</h1>
+      <p className="text-base text-gray-300 mt-1">
         Fullstack JavaScript Developer from 🇮🇳
       </p>
-      <div className="flex flex-col sm:flex-row mt-8">
-        <img
-          src="/profile-pic.jpeg"
-          alt="profile-image"
-          className="rounded-full w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]"
-        />
+      <div className="flex flex-col sm:flex-row mt-3">
         <div className="ml-1 mt-2 sm:ml-5">
           <div className="my-3">
             <a
