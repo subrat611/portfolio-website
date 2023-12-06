@@ -4,8 +4,8 @@ const About = () => {
   return (
     <section className="bg-slate-950 pb-6 h-full min-h-screen">
       <Header />
-      <div className="w-11/12 max-w-[780px] mx-auto mt-10">
-        <p className="text-slate-50 font-semibold text-2xl">About me</p>
+      <div className="w-11/12 max-w-[780px] mx-auto">
+        <p className="text-slate-50 font-semibold text-3xl">About me</p>
         <p className="text-gray-300 text-lg mt-2">
           <span className="text-cyan-300">
             🚀 Passionate Frontend Developer | Open Source Enthusiast{" "}

@@ -9,8 +9,10 @@ const HeroSection = () => {
   const { themeMode } = useContext(ThemeContext);
 
   return (
-    <section className="w-11/12 max-w-[780px] mx-auto mt-24 px-4 md:px-0">
-      <h1 className="text-4xl text-slate-50 font-bold w-[220px]">Subrat Kumar Jena</h1>
+    <section className="w-11/12 max-w-[780px] mx-auto px-4 md:px-0">
+      <h1 className="text-4xl text-slate-50 font-bold w-[220px]">
+        Subrat Kumar Jena
+      </h1>
       <p className="text-base text-gray-300 mt-1">
         Fullstack JavaScript Developer from 🇮🇳
       </p>
