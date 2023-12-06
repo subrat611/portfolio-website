@@ -3,12 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    font-family: "Inter", sans-serif;
+body {
+  font-family: "Inter", sans-serif;
+}
 
-    .dark svg path {
-      color: rgb(209, 213, 219, 1);
-    }
-  }
+.dark svg path {
+  color: rgb(209, 213, 219, 1);
 }
