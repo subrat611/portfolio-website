@@ -25,8 +25,8 @@ const Header = () => {
   return (
     <div>
       <header
-        className={`w-11/12 max-w-[780px] mx-auto pt-8 px-4 flex justify-between items-center md:py-6 md:px-0 ${
-          !showMobNav ? "pb-20" : "pb-0"
+        className={`w-11/12 max-w-[780px] mx-auto pt-8 px-4 flex justify-between items-center md:pb-20 md:px-0 ${
+          !showMobNav ? "pb-16" : "pb-0"
         }`}
       >
         <img
@@ -34,12 +34,30 @@ const Header = () => {
           alt="profile-image"
           className="rounded-full w-[48px] h-[48px]"
         />
-        <div className="cursor-pointer" onClick={handleShowMobNav}>
+        <div
+          className="cursor-pointer block sm:hidden"
+          onClick={handleShowMobNav}
+        >
           <IconBuddyMenuIcon />
         </div>
+        <ul className="text-lime-100 hidden sm:flex">
+          {navItem.map((item, i) => (
+            <li
+              key={i}
+              className={`mx-2 font-medium hover:text-cyan-300 hover:border-slate-200 cursor-pointer ${
+                router.route === item.route
+                  ? "border-slate-200 text-cyan-300"
+                  : "text-slate-300 border-gray-500"
+              }`}
+              onClick={() => handleNavigation(item.route)}
+            >
+              {item.name}
+            </li>
+          ))}
+        </ul>
       </header>
       {showMobNav && (
-        <div className="overflow-x-scroll relative h-28 scrollbar">
+        <div className="overflow-x-scroll relative h-28 scrollbar sm:hidden">
           <ul className="text-lime-100 absolute top-9 left-8 flex">
             {navItem.map((item, i) => (
               <li
