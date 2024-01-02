@@ -9,8 +9,8 @@ export const IconBuddyMenuIcon = () => {
       <g
         fill="none"
         stroke="#fff"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <circle cx="3.25" cy="3.25" r="2.75" />
         <circle cx="10.75" cy="3.25" r="2.75" />
