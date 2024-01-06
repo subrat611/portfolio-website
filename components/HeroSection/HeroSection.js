@@ -54,7 +54,7 @@ const HeroSection = () => {
               </span>
             </a>
           </div>
-          <div className="my-3">
+          {/* <div className="my-3">
             <a
               className={`cursor-pointer flex items-center ${themeMode} group`}
             >
@@ -63,7 +63,7 @@ const HeroSection = () => {
                 Resume
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
