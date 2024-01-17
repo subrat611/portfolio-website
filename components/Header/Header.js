@@ -26,7 +26,7 @@ const Header = () => {
           className="rounded-full w-[36px] h-[36px]"
         /> */}
         <p className="font-seaweed text-gray-50 text-2xl pt-2">Subrat</p>
-        <ul className="hidden sm:flex">
+        <ul className="sm:flex">
           {navItem.map((item, i) => (
             <li
               key={i}
