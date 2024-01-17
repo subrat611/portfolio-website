@@ -7,7 +7,6 @@ import {
   IconBuddyLeetCodeIcon,
   LinkedinIcon,
   TwitterIcon,
-  TypescriptIcon,
 } from "@/utils/icons";
 
 import { ThemeContext } from "@/context/ThemeModeContext";
