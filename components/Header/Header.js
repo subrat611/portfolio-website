@@ -31,7 +31,7 @@ const Header = () => {
             <li
               key={i}
               className={`mx-2 font-medium hover:text-gray-100 hover:border-slate-200 cursor-pointer ${
-                router.route === item.route ? "text-gray-100" : "text-gray-500"
+                router.route === item.route ? "text-gray-100" : "text-gray-400"
               }`}
               onClick={() => handleNavigation(item.route)}
             >
