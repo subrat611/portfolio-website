@@ -61,38 +61,107 @@ export const frontendTools = [
   },
 ];
 
-export const backendTools = [
+import {
+  BootstrapIcon,
+  CppIcon,
+  CssIcon,
+  ExpressjsIcon,
+  JavaScriptIcon,
+  LinuxIcon,
+  MaterialuiIcon,
+  MongodbIcon,
+  NextJsIcon,
+  NodejsIcon,
+  NuxtJsIcon,
+  PostmanIcon,
+  ReactJsIcon,
+  ReduxIcon,
+  ScssIcon,
+  SupabaseIcon,
+  TailwindcssIcon,
+  TypescriptIcon,
+  VueJsIcon,
+} from "./icons";
+
+export const frontendSkills = [
   {
-    link: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
-    alt: "nodejs",
+    name: "JavaScript",
+    icon: <JavaScriptIcon />,
   },
   {
-    link: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB",
-    alt: "expressjs",
+    name: "TypeScript",
+    icon: <TypescriptIcon />,
   },
   {
-    link: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
-    alt: "mongodb",
+    name: "React.js",
+    icon: <ReactJsIcon />,
   },
   {
-    link: "https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white",
-    alt: "supabase",
+    name: "Vue.js",
+    icon: <VueJsIcon />,
   },
   {
-    link: "https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101",
-    alt: "socket.io",
+    name: "Next.js",
+    icon: <NextJsIcon />,
   },
   {
-    link: "https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white",
-    alt: "postman",
+    name: "Nuxt.js",
+    icon: <NuxtJsIcon />,
   },
   {
-    link: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
-    alt: "linux",
+    name: "Redux-toolkit",
+    icon: <ReduxIcon />,
   },
   {
-    link: "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
-    alt: "c++",
+    name: "CSS3",
+    icon: <CssIcon />,
+  },
+  {
+    name: "SCSS",
+    icon: <ScssIcon />,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <TailwindcssIcon />,
+  },
+  {
+    name: "Material UI",
+    icon: <MaterialuiIcon />,
+  },
+  {
+    name: "Bootstrap",
+    icon: <BootstrapIcon />,
+  },
+];
+
+export const backendSkills = [
+  {
+    name: "Node.js",
+    icon: <NodejsIcon />,
+  },
+  {
+    name: "Express.js",
+    icon: <ExpressjsIcon />,
+  },
+  {
+    name: "MongoDB",
+    icon: <MongodbIcon />,
+  },
+  {
+    name: "Postman",
+    icon: <PostmanIcon />,
+  },
+  {
+    name: "Supabase",
+    icon: <SupabaseIcon />,
+  },
+  {
+    name: "Linux",
+    icon: <LinuxIcon />,
+  },
+  {
+    name: "C++",
+    icon: <CppIcon />,
   },
 ];
 
