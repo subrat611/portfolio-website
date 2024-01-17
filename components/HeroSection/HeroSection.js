@@ -40,6 +40,7 @@ const HeroSection = () => {
           href="https://github.com/subrat611/"
           target="_blank"
           className="text-gray-400 hover:text-gray-50"
+          aria-label="link to github profile"
         >
           <GithubIcon />
         </a>
@@ -47,6 +48,7 @@ const HeroSection = () => {
           href="https://www.linkedin.com/in/subratkumarjena/"
           target="_blank"
           className="text-gray-400 hover:text-gray-50"
+          aria-label="link to linkedin profile"
         >
           <LinkedinIcon />
         </a>
@@ -54,6 +56,7 @@ const HeroSection = () => {
           href="https://leetcode.com/s1jena/"
           target="_blank"
           className="text-gray-400 hover:text-gray-50"
+          aria-label="link to leetcode profile"
         >
           <IconBuddyLeetCodeIcon />
         </a>
@@ -61,6 +64,7 @@ const HeroSection = () => {
           href="https://twitter.com/nikhil88950"
           target="_blank"
           className="text-gray-400 hover:text-gray-50"
+          aria-label="link to twitter profile"
         >
           <TwitterIcon />
         </a>
