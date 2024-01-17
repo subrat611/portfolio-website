@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className={`py-10 flex justify-between items-center`}>
+      <header className={`pt-8 flex justify-between sm:items-center sm:py-10`}>
         {/* <img
           src="/profile-pic.jpeg"
           alt="profile-image"
