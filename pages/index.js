@@ -3,6 +3,7 @@ import Head from "next/head";
 // components
 import Header from "@/components/Header/Header";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import ProjectSection from "@/components/ProjectSection/ProjectSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <div className="w-11/12 max-w-[780px] mx-auto">
           <Header />
           <HeroSection />
+          <ProjectSection />
         </div>
       </main>
     </>
