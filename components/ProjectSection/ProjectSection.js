@@ -13,7 +13,7 @@ const ProjectSection = () => {
                 <p className="text-xl text-gray-400 font-semibold py-2">
                   NxDraw
                 </p>
-                <p className="text-3xl text-gray-200 pb-5">
+                <p className="text-2xl text-gray-200 pb-5">
                   An online whiteboard application built with Next.js.
                 </p>
                 <p>skills</p>
