@@ -19,7 +19,8 @@ const HeroSection = () => {
     <section className="h-full min-h-[80vh] flex flex-col pt-10 pb-10 md:pt-20">
       <div>
         <p className="capitalize text-xl text-green-300 font-medium">
-          software engineer <br /> {`<frontend>`}
+          software engineer{" "}
+          <span className="block md:inline-block">{`<frontend>`}</span>
         </p>
         <label className="relative inline-flex items-center cursor-pointer mt-3">
           <input
