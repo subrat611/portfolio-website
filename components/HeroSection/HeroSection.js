@@ -19,9 +19,9 @@ const HeroSection = () => {
     <section className="h-full min-h-[80vh] flex flex-col pt-10 pb-10 md:pt-20">
       <div>
         <p className="capitalize text-xl text-green-300 font-medium">
-          frontend developer
+          software engineer <br /> {`<frontend>`}
         </p>
-        <label className="relative inline-flex items-center cursor-pointer mt-2">
+        <label className="relative inline-flex items-center cursor-pointer mt-3">
           <input
             type="checkbox"
             value=""
