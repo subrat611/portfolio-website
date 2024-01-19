@@ -70,7 +70,7 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="my-4">
-        <p className="text-2xl text-gray-400 leading-8 md:leading-10 md:text-3xl">
+        <p className="text-2xl text-gray-300/80 leading-8 md:leading-10 md:text-3xl">
           Hello there! I'm{" "}
           <span className="text-gray-200 font-medium">Subrat Kumar Jena</span>,
           a final year B.Tech student with a keen passion for frontend
