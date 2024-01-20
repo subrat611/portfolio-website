@@ -66,6 +66,7 @@ import {
   CppIcon,
   CssIcon,
   ExpressjsIcon,
+  FirebaseIcon,
   JavaScriptIcon,
   LinuxIcon,
   MaterialuiIcon,
@@ -154,6 +155,10 @@ export const backendSkills = [
   {
     name: "Supabase",
     icon: <SupabaseIcon />,
+  },
+  {
+    name: "Firebase",
+    icon: <FirebaseIcon />,
   },
   {
     name: "Linux",
