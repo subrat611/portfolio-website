@@ -1,11 +1,8 @@
-import Link from "next/link";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import { ThemeContext } from "@/context/ThemeModeContext";
 
 import { navItem } from "@/utils";
-import { DarkThemeIcon, LightThemeIcon, Logo } from "@/utils/icons";
-import { IconBuddyMenuIcon } from "@/assets/icons";
 import { useRouter } from "next/router";
 
 const Header = () => {
