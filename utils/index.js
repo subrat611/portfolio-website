@@ -1,13 +1,13 @@
 export const navItem = [
   { name: "About", route: "/" },
-  {
-    name: "Experience",
-    route: "/experience",
-  },
-  {
-    name: "Projects",
-    route: "/projects",
-  },
+  // {
+  //   name: "Experience",
+  //   route: "/",
+  // },
+  // {
+  //   name: "Projects",
+  //   route: "/",
+  // },
 ];
 
 export const frontendTools = [
