@@ -43,6 +43,7 @@ const ProjectSection = () => {
                     </a>
                     <a
                       href={liveLink}
+                      target="_blank"
                       className="bg-transparent border border-gray-700 p-2 text-gray-200 rounded-md hover:bg-gray-600/30"
                       aria-label="link to live site"
                     >
