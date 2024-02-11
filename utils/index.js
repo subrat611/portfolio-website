@@ -1,11 +1,11 @@
 export const navItem = [
   { name: "About", route: "/" },
+  {
+    name: "Projects",
+    route: "/projects",
+  },
   // {
   //   name: "Experience",
-  //   route: "/",
-  // },
-  // {
-  //   name: "Projects",
   //   route: "/",
   // },
 ];
