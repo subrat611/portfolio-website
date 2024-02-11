@@ -31,8 +31,10 @@ const pinnedProjects = [
     ],
     gitLink: "https://github.com/subrat611/NxDraw",
     liveLink: "https://nxdraw.vercel.app/",
-    video:
-      "https://res.cloudinary.com/dr1dgktil/video/upload/f_auto:video,q_auto/v1/portfolio/q5uy8i7csf4vsenudktg",
+    images: [
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/znykagsvorr1jgdfta1s",
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/d84aayyiundlcairxx6h",
+    ],
   },
   {
     project_name: "ColdBurnChat",
@@ -59,6 +61,11 @@ const pinnedProjects = [
     gitLink: "https://github.com/subrat611/ColdBurnChat",
     liveLink: "https://cold-burn-chat.vercel.app/",
     video: "",
+    images: [
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/cht2czukb7gibjxy5fel",
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/lmotfkbv9blwpdqvkiza",
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/mo5vode5r3ksw4ig7rlh",
+    ],
   },
 ];
 

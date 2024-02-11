@@ -1,5 +1,6 @@
 import pinnedProjects from "@/utils/projects";
 import Link from "next/link";
+import ImageSlider from "./ImageSlider";
 
 const ProjectSection = () => {
   return (
@@ -10,13 +11,13 @@ const ProjectSection = () => {
       <div className="py-5">
         {pinnedProjects.map(
           (
-            { project_name, description, tech, gitLink, liveLink, video },
+            { project_name, description, tech, gitLink, liveLink, images },
             i
           ) => (
             <div key={i}>
               <div className="border-b border-gray-600" />
-              <div className="py-7 flex items-start flex-col-reverse md:flex-row">
-                <div className="pr-4">
+              <div className="py-7 flex items-start relative flex-col-reverse md:flex-row">
+                <div className="pr-4 w-[90%]">
                   <p className="text-xl text-gray-400 font-semibold py-2">
                     {project_name}
                   </p>
@@ -52,15 +53,9 @@ const ProjectSection = () => {
                   </div>
                 </div>
 
-                {/* video player */}
-                <video
-                  className="w-[360px] h-full rounded-lg bg-transparent"
-                  src={video}
-                  controls
-                  loop
-                  autoPlay={false}
-                  playsInline
-                ></video>
+                <div className="relative max-w-[350px] w-[100%] h-[200px]">
+                  <ImageSlider images={images} />
+                </div>
               </div>
             </div>
           )
