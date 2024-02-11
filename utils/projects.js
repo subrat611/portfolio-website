@@ -8,7 +8,7 @@ import {
   TailwindcssIcon,
 } from "./icons";
 
-const pinnedProjects = [
+const projects = [
   {
     project_name: "NxDraw",
     description: "An online whiteboard application built with Next.js.",
@@ -69,4 +69,4 @@ const pinnedProjects = [
   },
 ];
 
-export default pinnedProjects;
+export default projects;
