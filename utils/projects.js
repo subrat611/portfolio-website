@@ -2,12 +2,14 @@ import {
   FirebaseIcon,
   JavaScriptIcon,
   NextJsIcon,
+  NuxtJsIcon,
   ReactJsIcon,
   ReactRouterIcon,
   ScssIcon,
   TailwindcssIcon,
   TypescriptIcon,
   ViteJsIcon,
+  VueJsIcon,
 } from "./icons";
 
 const projects = [
@@ -95,6 +97,33 @@ const projects = [
       "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/cht2czukb7gibjxy5fel",
       "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/lmotfkbv9blwpdqvkiza",
       "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/mo5vode5r3ksw4ig7rlh",
+    ],
+  },
+  {
+    project_name: "Technorollix",
+    description:
+      "Central India's Biggest Technical And Cultural Fest Technorollix - O.P. Jindal University.",
+    tech: [
+      {
+        name: "Nuxt.js",
+        icon: <NuxtJsIcon />,
+      },
+      {
+        name: "Vue.js",
+        icon: <VueJsIcon />,
+      },
+      {
+        name: "SCSS",
+        icon: <ScssIcon />,
+      },
+    ],
+    gitLink: "https://github.com/subrat611/technorollix23",
+    liveLink: "https://technorollix.netlify.app/",
+    video: "",
+    images: [
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/vin7nhdwcdpdtgwrtruf",
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/oqfwv5m5yimaix5phjmq",
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/dafbwkkcenwtd69n97lw",
     ],
   },
 ];
