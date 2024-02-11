@@ -17,11 +17,6 @@ const Header = () => {
   return (
     <div>
       <header className={`pt-8 flex justify-between sm:items-center sm:py-10`}>
-        {/* <img
-          src="/profile-pic.jpeg"
-          alt="profile-image"
-          className="rounded-full w-[36px] h-[36px]"
-        /> */}
         <p className="font-seaweed text-gray-50 text-2xl pt-2">Subrat</p>
         <ul className="sm:flex">
           {navItem.map((item, i) => (
