@@ -6,9 +6,39 @@ import {
   ReactRouterIcon,
   ScssIcon,
   TailwindcssIcon,
+  TypescriptIcon,
+  ViteJsIcon,
 } from "./icons";
 
 const projects = [
+  {
+    project_name: "Leetcode Tree Visualizer",
+    description:
+      "It enables you to view the tree that corresponds to the array of test cases.",
+    tech: [
+      {
+        name: "TypeScript",
+        icon: <TypescriptIcon />,
+      },
+      {
+        name: "Vite Js",
+        icon: <ViteJsIcon />,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <TailwindcssIcon />,
+      },
+      {
+        name: "HTML 5 Canvas",
+      },
+    ],
+    gitLink: "https://github.com/subrat611/leetcode-tree-visualizer",
+    liveLink: "https://leetcode-tree-visualizer.vercel.app/",
+    images: [
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/tx9wdud4r35e3ug90n5l",
+      "https://res.cloudinary.com/dr1dgktil/image/upload/f_auto,q_auto/v1/portfolio/xpnzmt8ydlgbd1sy4hlf",
+    ],
+  },
   {
     project_name: "NxDraw",
     description: "An online whiteboard application built with Next.js.",
