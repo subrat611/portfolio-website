@@ -1,58 +1,87 @@
-import { IconBuddyInternetIcon } from "@/assets/icons";
 import Header from "@/components/Header/Header";
-import { GithubIcon } from "@/utils/icons";
+import ImageSlider from "@/components/ProjectSection/ImageSlider";
 import projects from "@/utils/projects";
+import Head from "next/head";
 
 const Projects = () => {
   return (
-    <section className="bg-slate-950 pb-6 h-full min-h-screen">
-      <Header />
-      <div className="w-11/12 max-w-[780px] mx-auto px-4 md:px-0">
-        <p className="text-slate-50 text-3xl font-bold">Projects</p>
-        {projects.map((project, i) => {
-          let { project_name, description, tech, gitLink, liveLink } = project;
+    <>
+      <Head>
+        <title>Home | Subrat Jena</title>
+      </Head>
+      <main className="bg-[#111] h-full min-h-screen">
+        <div className="w-11/12 max-w-[780px] mx-auto">
+          <Header />
+          <section className="pb-10 flex flex-col items-start mt-10">
+            <p className="text-2xl sm:text-3xl text-gray-200 font-semibold">
+              Projects
+            </p>
+            <div className="py-5">
+              {projects.map(
+                (
+                  {
+                    project_name,
+                    description,
+                    tech,
+                    gitLink,
+                    liveLink,
+                    images,
+                  },
+                  i
+                ) => (
+                  <div key={i}>
+                    <div className="border-b border-gray-600" />
+                    <div className="py-7 flex items-start relative flex-col-reverse md:flex-row">
+                      <div className="pr-4 w-[90%]">
+                        <p className="text-xl text-gray-400 font-semibold py-2">
+                          {project_name}
+                        </p>
+                        <p className="text-2xl text-gray-200 pb-5">
+                          {description}
+                        </p>
+                        <div className="flex flex-wrap items-center mb-2">
+                          {tech.map(({ name, icon }, i) => (
+                            <div
+                              key={`${name}-${i}`}
+                              className="text-gray-200 font-medium flex items-center px-[10px] py-[5px] border border-gray-700 mr-2 mb-3 rounded-md text-sm"
+                            >
+                              {icon}
+                              <span className="ml-2">{name}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <a
+                            href={gitLink}
+                            target="_blank"
+                            className="bg-transparent border border-gray-700 p-2 text-gray-200 rounded-md hover:bg-gray-600/30"
+                            aria-label="link to project repository"
+                          >
+                            View project
+                          </a>
+                          <a
+                            href={liveLink}
+                            target="_blank"
+                            className="bg-transparent border border-gray-700 p-2 text-gray-200 rounded-md hover:bg-gray-600/30"
+                            aria-label="link to live site"
+                          >
+                            Live site
+                          </a>
+                        </div>
+                      </div>
 
-          return (
-            <div
-              className="text-slate-50 bg-gray-900/30 border border-gray-600 mt-10 rounded-md py-4 px-5 flex flex-col"
-              key={`${project_name}-${i}`}
-            >
-              {/* image */}
-              <div>
-                <p className="text-2xl font-semibold">{project_name}</p>
-                <p className="mt-3 text-lg">{description}</p>
-                <div className="mt-4">
-                  {tech.map(({ name, clr }, i) => (
-                    <span
-                      key={`${name}-${i}`}
-                      className={`text-${clr}-500 bg-${clr}-500/30 font-semibold px-2 py-1 rounded-md cursor-default me-2`}
-                    >
-                      {name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="mt-5 place-self-end flex">
-                <a
-                  href={liveLink}
-                  target="_blank"
-                  className="mx-3 text-slate-400 hover:text-slate-300"
-                >
-                  <IconBuddyInternetIcon />
-                </a>
-                <a
-                  href={gitLink}
-                  target="_blank"
-                  className="text-slate-400 hover:text-slate-300"
-                >
-                  <GithubIcon />
-                </a>
-              </div>
+                      <div className="relative max-w-[350px] w-[100%] h-[200px]">
+                        <ImageSlider images={images} />
+                      </div>
+                    </div>
+                  </div>
+                )
+              )}
             </div>
-          );
-        })}
-      </div>
-    </section>
+          </section>
+        </div>
+      </main>
+    </>
   );
 };
 
