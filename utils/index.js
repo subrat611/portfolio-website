@@ -4,10 +4,10 @@ export const navItem = [
     name: "Projects",
     route: "/projects",
   },
-  // {
-  //   name: "Experience",
-  //   route: "/",
-  // },
+  {
+    name: "Experience",
+    route: "/experience",
+  },
 ];
 
 export const frontendTools = [
