@@ -190,6 +190,9 @@ export const managementTools = [
 ];
 
 import MarktineLogo from "../assets/marktine-logo.jpeg";
+import GssocLogo from "../assets/gssoc.jpg";
+import OyeBusyLogo from "../assets/oyebusy.jpeg";
+import OpjuLogo from "../assets/opju.png";
 
 export const experiences = [
   {
@@ -202,5 +205,26 @@ export const experiences = [
       "Write modern, maintainable, clean code by using Atomic Design Pattern.",
       " Beyond resolving bugs, I played a pivotalrole in developing key features that significantly enhanced the application's functionality. Notable accomplishments include implementing real-time notifications, crafting an intuitive admin dashboard, optimizing the user experience with a feature-rich profile page, and ensuring seamless state management using Redux Toolkit and Redux Saga.",
     ],
+  },
+  {
+    imgpath: GssocLogo,
+    name: "GirlScript Summer of Code",
+    position: "Open Source Contributor",
+    link: "https://gssoc.girlscript.tech/",
+    desc: [],
+  },
+  {
+    imgpath: OyeBusyLogo,
+    name: "OyeBusy Technologies Pvt. Ltd.",
+    position: "Frontend Developer",
+    link: "https://www.oyebusy.com/",
+    desc: [],
+  },
+  {
+    imgpath: OpjuLogo,
+    name: "OP Jindal University",
+    position: "Frontend Developer",
+    link: "https://www.opju.ac.in/",
+    desc: [],
   },
 ];
