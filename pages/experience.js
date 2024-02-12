@@ -20,7 +20,7 @@ const Experience = () => {
             </p>
             <div className="py-5">
               {experiences.map((experience, i) => {
-                const { imgpath, name, position, desc } = experience;
+                const { imgpath, name, position, desc, link } = experience;
 
                 return (
                   <div
@@ -31,7 +31,7 @@ const Experience = () => {
                       <p className="text-slate-300 font-medium group-hover:text-slate-200 text-xl">
                         {position}{" "}
                         <a
-                          href="https://marktine.com/"
+                          href={link}
                           target="_blank"
                           className="text-cyan-400 font-medium group-hover:text-cyan-300 hover:underline hover:underline-offset-4"
                         >
