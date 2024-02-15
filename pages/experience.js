@@ -16,19 +16,24 @@ const Experience = () => {
           <Header />
           <section className="pb-10 flex flex-col items-start mt-10">
             <p className="text-2xl sm:text-3xl text-gray-200 font-semibold">
-              Experience <span className="text-green-300">(2 years)</span>
+              Experience <span className="text-green-400">(2 yrs.)</span>
             </p>
             <div className="py-5">
               {experiences.map((experience, i) => {
-                const { imgpath, name, position, desc, link } = experience;
+                const { imgpath, name, position, desc, link, duration } =
+                  experience;
 
                 return (
                   <div
-                    className="group bg-[#111] border border-gray-700 my-5 p-6 rounded-xl hover:cursor-default"
+                    className="group bg-[#212529] my-5 p-6 rounded-sm hover:cursor-default"
                     key={`${name}-${i}`}
                   >
                     <div className="flex items-center justify-between">
                       <p className="text-slate-300 font-medium group-hover:text-slate-200 text-xl">
+                        <span className="text-base md:text-lg text-green-400">
+                          Duration: {duration}{" "}
+                        </span>{" "}
+                        <br />
                         {position}{" "}
                         <a
                           href={link}
@@ -51,7 +56,7 @@ const Experience = () => {
                     <ul className="list-decimal ml-4 mt-5">
                       {desc.map((item, i) => (
                         <li
-                          className="text-gray-300 group-hover:text-gray-300 my-2"
+                          className="text-gray-300 group-hover:text-gray-300 my-2 text-base"
                           key={`${item}-${i}`}
                         >
                           {item}
@@ -65,50 +70,6 @@ const Experience = () => {
           </section>
         </div>
       </main>
-      {/* <section className="bg-slate-950 pb-6 h-full min-h-screen">
-        <Header />
-        <div className="w-11/12 max-w-[780px] mx-auto">
-          {experiences.map((experience, i) => {
-            const { imgpath, name, position, desc } = experience;
-  
-            return (
-              <div
-                className="group flex flex-col items-start md:flex-row hover:cursor-default"
-                key={`${name}-${i}`}
-              >
-                <Image
-                  src={imgpath}
-                  height={70}
-                  width={70}
-                  className="rounded-full"
-                />
-                <div className="md:ml-3 mt-2">
-                  <p className="text-slate-300 font-medium group-hover:text-slate-200 text-lg">
-                    {position}{" "}
-                    <a
-                      href="https://marktine.com/"
-                      target="_blank"
-                      className="text-cyan-400 font-medium group-hover:text-cyan-300 hover:underline hover:underline-offset-4"
-                    >
-                      @{name}
-                    </a>
-                  </p>
-                  <ul className="list-disc ml-4">
-                    {desc.map((item, i) => (
-                      <li
-                        className="text-slate-400 font-medium group-hover:text-slate-300 my-2"
-                        key={`${item}-${i}`}
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section> */}
     </>
   );
 };

@@ -197,7 +197,8 @@ import OpjuLogo from "../assets/opju.png";
 export const experiences = [
   {
     imgpath: MarktineLogo,
-    name: "MARKTINE",
+    duration: "5 m",
+    name: "Marktine",
     position: "Frontend Developer",
     link: "https://marktine.com/",
     desc: [
@@ -208,6 +209,7 @@ export const experiences = [
   },
   {
     imgpath: GssocLogo,
+    duration: "3 m",
     name: "GirlScript Summer of Code",
     position: "Open Source Contributor",
     link: "https://gssoc.girlscript.tech/",
@@ -215,6 +217,7 @@ export const experiences = [
   },
   {
     imgpath: OyeBusyLogo,
+    duration: "5 m",
     name: "OyeBusy Technologies Pvt. Ltd.",
     position: "Frontend Developer",
     link: "https://www.oyebusy.com/",
@@ -222,6 +225,7 @@ export const experiences = [
   },
   {
     imgpath: OpjuLogo,
+    duration: "1 yr 9 m",
     name: "OP Jindal University",
     position: "Frontend Developer",
     link: "https://www.opju.ac.in/",
