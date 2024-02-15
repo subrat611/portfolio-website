@@ -20,7 +20,7 @@ const Experience = () => {
             </p>
             <div className="py-5">
               {experiences.map((experience, i) => {
-                const { imgpath, name, position, desc, link, duration } =
+                const { imgpath, name, position, desc, link, duration, type } =
                   experience;
 
                 return (
@@ -29,19 +29,25 @@ const Experience = () => {
                     key={`${name}-${i}`}
                   >
                     <div className="flex items-center justify-between">
-                      <p className="text-slate-300 font-medium group-hover:text-slate-200 text-xl">
+                      <p className="text-slate-300 font-medium group-hover:text-slate-200">
                         <span className="text-base md:text-lg text-green-400">
                           Duration: {duration}{" "}
                         </span>{" "}
                         <br />
-                        {position}{" "}
-                        <a
-                          href={link}
-                          target="_blank"
-                          className="text-cyan-400 font-medium group-hover:text-cyan-300 hover:underline hover:underline-offset-4"
-                        >
-                          @{name}
-                        </a>
+                        <span className="text-xl">
+                          {position}{" "}
+                          <a
+                            href={link}
+                            target="_blank"
+                            className="text-cyan-400 font-medium group-hover:text-cyan-300 hover:underline hover:underline-offset-4"
+                          >
+                            @{name}
+                          </a>{" "}
+                        </span>
+                        <br />
+                        <span className="text-xs font-normal uppercase md:text-sm text-slate-300">
+                          {type}
+                        </span>
                       </p>
 
                       <Image
