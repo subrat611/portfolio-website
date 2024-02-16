@@ -203,9 +203,9 @@ export const experiences = [
     position: "Frontend Developer",
     link: "https://marktine.com/",
     desc: [
-      "During my internship, I was an active collaborator, seamlessly bridging the gap between frontend and backend teams. I skillfully organized my work using Jira software and made sure we stayed on track with project deadlines, My attention to detail ensured that we met all milestones and goals with precision.",
-      "Write modern, maintainable, clean code by using Atomic Design Pattern.",
-      " Beyond resolving bugs, I played a pivotalrole in developing key features that significantly enhanced the application's functionality. Notable accomplishments include implementing real-time notifications, crafting an intuitive admin dashboard, optimizing the user experience with a feature-rich profile page, and ensuring seamless state management using Redux Toolkit and Redux Saga.",
+      // "During my internship, I was an active collaborator, seamlessly bridging the gap between frontend and backend teams. I skillfully organized my work using Jira software and made sure we stayed on track with project deadlines, My attention to detail ensured that we met all milestones and goals with precision.",
+      // "Write modern, maintainable, clean code by using Atomic Design Pattern.",
+      // " Beyond resolving bugs, I played a pivotalrole in developing key features that significantly enhanced the application's functionality. Notable accomplishments include implementing real-time notifications, crafting an intuitive admin dashboard, optimizing the user experience with a feature-rich profile page, and ensuring seamless state management using Redux Toolkit and Redux Saga.",
     ],
   },
   {
