@@ -59,7 +59,7 @@ const Experience = () => {
                       />
                     </div>
 
-                    <ul className="list-decimal ml-4 mt-5">
+                    <ul className="list-disc ml-4 mt-5">
                       {desc.map((item, i) => (
                         <li
                           className="text-gray-300 group-hover:text-gray-300 my-2 text-base"

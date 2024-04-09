@@ -203,9 +203,9 @@ export const experiences = [
     position: "Frontend Developer",
     link: "https://marktine.com/",
     desc: [
-      // "During my internship, I was an active collaborator, seamlessly bridging the gap between frontend and backend teams. I skillfully organized my work using Jira software and made sure we stayed on track with project deadlines, My attention to detail ensured that we met all milestones and goals with precision.",
-      // "Write modern, maintainable, clean code by using Atomic Design Pattern.",
-      // " Beyond resolving bugs, I played a pivotalrole in developing key features that significantly enhanced the application's functionality. Notable accomplishments include implementing real-time notifications, crafting an intuitive admin dashboard, optimizing the user experience with a feature-rich profile page, and ensuring seamless state management using Redux Toolkit and Redux Saga.",
+      "Utilized Next.js, Material UI, Redux Saga, and Redux Toolkit to spearhead the development of vriti.ai, an AI-powered job portal.",
+      "Implemented performance-enhancing features such as infinite scrolling pagination and the Render Props Pattern forreusable components.",
+      "Developed features like real-time notifications (WebSocket), admin dashboard and connection features, while also resolving over 200+ bugs.",
     ],
   },
   {
@@ -215,7 +215,9 @@ export const experiences = [
     name: "GirlScript Summer of Code",
     position: "Open Source Contributor",
     link: "https://gssoc.girlscript.tech/",
-    desc: [],
+    desc: [
+      "Contributed to the developer documentation and rectified 5+ bugs across various projects, earning a ranking of 329 for my contributions.",
+    ],
   },
   {
     imgpath: OyeBusyLogo,
@@ -224,7 +226,10 @@ export const experiences = [
     name: "OyeBusy Technologies Pvt. Ltd.",
     position: "Frontend Developer",
     link: "https://www.oyebusy.com/",
-    desc: [],
+    desc: [
+      "Developed a home service-providing platform utilizing Nuxt.js, Vue.js, and Vuex. Focused on key features including authentication via phone OTP, service listing, and user carts.",
+      "Implemented best practices such as infinite scrolling pagination and crafted custom components for enhanced reusability. Designed responsive layouts to ensure optimal user experience across devices.",
+    ],
   },
   {
     imgpath: OpjuLogo,
@@ -233,6 +238,9 @@ export const experiences = [
     name: "OP Jindal University",
     position: "Frontend Developer",
     link: "https://www.opju.ac.in/",
-    desc: [],
+    desc: [
+      "Led the OP Jindal University web team, overseeing the development of responsive websites such as Technorollix2023, OTCON and ISMS2023.",
+      "Enhanced website performance metrics: Lighthouse performance by 98%, Accessibility by 83%, Best Practices by 96%, and SEO by 80%.",
+    ],
   },
 ];
